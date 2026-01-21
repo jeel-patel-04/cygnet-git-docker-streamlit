@@ -1,1 +1,1 @@
-This is bala form ahmedabad , calling you for to join our todays
+In this task, a new feature branch was created from the main branch using Git. The purpose of creating a separate branch was to work on changes independently without affecting the stable main branch. After switching to the feature branch, updates were made to the README file and the changes were committed with a clear and meaningful commit message. This approach helps in organizing work and maintaining a clean project history.
