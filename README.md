@@ -15,5 +15,3 @@ mkdir git-practice
 cd git-practice
 ```
 
-This line was added by mistake.
-revert
