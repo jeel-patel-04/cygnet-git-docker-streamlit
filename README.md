@@ -119,4 +119,177 @@ git rebase -i HEAD~n
 
 ---
 
+## 🔹 PART 2: Shell Scripting
+
+All shell scripting tasks were completed using **Bash** on **Ubuntu/Linux**.
+
+---
+
+### Module 1: Getting Started with the Shell
+
+* Navigated the filesystem.
+* Created directories and files.
+* Moved and deleted files.
+
+**Commands used:**
+
+```bash
+pwd
+ls
+mkdir
+cd
+touch
+mv
+rm
+```
+
+---
+
+### Module 2: Your First Script
+
+* Created a Hello World script.
+* Created a system information script.
+
+**Hello World Example:**
+
+```bash
+#!/bin/bash
+echo "Hello World"
+```
+
+**System Information Example:**
+
+```bash
+#!/bin/bash
+echo "Date: $(date)"
+echo "User: $(whoami)"
+echo "Hostname: $(hostname)"
+```
+
+---
+
+### Module 3: Variables and User Input
+
+* Used variables.
+* Took user input.
+* Performed arithmetic operations.
+
+**Example:**
+
+```bash
+#!/bin/bash
+read num1
+read num2
+sum=$((num1 + num2))
+echo "Sum is: $sum"
+```
+
+---
+
+### Module 4: Conditional Statements
+
+* Used if–else statements.
+* Checked if a file exists and is readable.
+
+**Example:**
+
+```bash
+#!/bin/bash
+if [ -r "$1" ]; then
+    echo "File exists and is readable"
+else
+    echo "File does not exist or is not readable"
+fi
+```
+
+---
+
+### Module 5: Loops
+
+* Used for and while loops.
+* Implemented countdown and file processing.
+
+**Example:**
+
+```bash
+#!/bin/bash
+for i in {10..1}
+do
+    echo $i
+done
+```
+
+---
+
+### Module 6: Functions
+
+* Created reusable functions.
+* Passed arguments.
+* Validated input.
+
+**Example:**
+
+```bash
+#!/bin/bash
+is_number() {
+    [[ $1 =~ ^[0-9]+$ ]]
+}
+```
+
+---
+
+### Module 7: Text Processing
+
+* Parsed log files using grep, sed, and awk.
+* Used pipes and redirection.
+
+**Commands used:**
+
+```bash
+grep "ERROR" app.log
+sed 's/ERROR/ISSUE/' app.log
+awk '{print $1}' app.log
+```
+
+---
+
+### Module 8: Arrays
+
+* Created arrays.
+* Iterated through arrays.
+* Accessed array elements.
+
+**Example:**
+
+```bash
+#!/bin/bash
+servers=("server1" "server2" "server3")
+for server in "${servers[@]}"
+do
+    echo "Server: $server"
+done
+```
+
+---
+
+### Module 9: Error Handling and Debugging
+
+* Stopped script execution on error.
+* Handled errors using trap.
+* Debugged scripts.
+* Redirected error output.
+
+**Example:**
+
+```bash
+#!/bin/bash
+set -e
+trap "echo 'Error occurred'" ERR
+```
+
+---
+
+## Conclusion
+
+This documentation covers foundational Git and Shell Scripting concepts, providing practical experience with version control, automation, and Linux command-line tools as part of the Cygnet internship onboarding process.
 
