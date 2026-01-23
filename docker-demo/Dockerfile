@@ -1,10 +1,4 @@
-FROM ubuntu
-
+FROM python:3.10-slim
 WORKDIR /app
-
-COPY app.sh /app/app.sh
-
-RUN chmod +x /app/app.sh
-
-CMD ["./app.sh"]
-
+COPY app.py .
+CMD ["python", "app.py"]
