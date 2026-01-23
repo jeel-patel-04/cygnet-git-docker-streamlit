@@ -293,7 +293,7 @@ trap "echo 'Error occurred'" ERR
 
 Docker was used to understand containerization and run applications in isolated environments.
 
-###Commands used
+### Commands used
 
 ```bash
 sudo apt install docker.io -y
